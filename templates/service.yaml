@@ -11,6 +11,7 @@ metadata:
   {{- end }}
 spec:
   type: {{.Values.service.type}}
+  loadBalancerIP: {{.Values.service.loadBalancerIP}}
   ports:
     - port: {{ default "80" .Values.service.port}}
       targetPort: http
