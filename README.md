@@ -1,4 +1,15 @@
-## Edits to the Postgres
+## Edits to the Postgresql Chart for ARM Compatibility
+
+The original chart directory uses an incompatible chart for installation on a raspberry pi. I updated the child chart to use a different postgresql image: 
+
+```
+image:
+  registry: docker.io
+  repository: arm64v8/postgres
+  tag: 14
+```
+
+[Stackoverflow Post](https://stackoverflow.com/questions/72617064/wiki-js-exec-user-process-caused-exec-format-error-on-postgress-container/73379497#73379497)
 
 
 <div align="center">
