@@ -8,6 +8,7 @@ image:
   repository: arm64v8/postgres
   tag: 14
 ```
+---
 
 [Stackoverflow Post](https://stackoverflow.com/questions/72617064/wiki-js-exec-user-process-caused-exec-format-error-on-postgress-container/73379497#73379497)
 
