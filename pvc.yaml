@@ -1,11 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  annotations:
-    volume.beta.kubernetes.io/storage-provisioner: rancher.io/local-path
-    volume.kubernetes.io/selected-node: server01
-    volume.kubernetes.io/storage-provisioner: rancher.io/local-path
-  creationTimestamp: "2022-11-02T17:57:56Z"
+  creationTimestamp: "2022-12-03T04:19:27Z"
   finalizers:
   - kubernetes.io/pvc-protection
   labels:
@@ -14,15 +10,15 @@ metadata:
     role: master
   name: data-wiki-postgresql-0
   namespace: wiki
-  resourceVersion: "258191"
-  uid: b82e066b-e6c3-4d54-8c81-24cf75e4e6c4
+  resourceVersion: "7325742"
+  uid: d521b59d-9034-45a0-b8f8-0f936525dc5a
 spec:
+  storageClassName: local-path
   accessModes:
   - ReadWriteOnce
   resources:
     requests:
       storage: 8Gi
-  storageClassName: local-path
   volumeMode: Filesystem
 status:
   phase: Pending

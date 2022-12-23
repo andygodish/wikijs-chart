@@ -65,7 +65,7 @@ service:
   # loadBalancerIP: 172.16.0.1
 
 ingress:
-  enabled: true
+  enabled: false
   className: traefik
   annotations: {}
     # kubernetes.io/ingress.class: nginx
@@ -173,7 +173,7 @@ postgresql:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    # storageClass: "-"
+    storageClass: "local-path"
     ## Persistent Volume Access Mode.
     ##
     accessMode: ReadWriteOnce
