@@ -176,4 +176,3 @@ See the [Configuration](#configuration) section to configure the PVC or to disab
 
 This chart provides support for Ingress resource. If you have an available Ingress Controller such as Nginx or Traefik you maybe want to set `ingress.enabled` to true and add `ingress.hosts` for the URL. Then, you should be able to access the installation using that address.
 
-TEST

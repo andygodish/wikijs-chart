@@ -1,6 +1,11 @@
 ---
 name: Create helm chart release
-on: workflow_dispatch
+on: 
+  pull_request:
+    types: [closed]
+  push:
+    branches: 
+    - main
 jobs:
   version: 
     runs-on: ubuntu-latest
