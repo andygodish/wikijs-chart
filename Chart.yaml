@@ -4,7 +4,7 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://charts.bitnami.com/bitnami
-  version: 8.10.14
+  version: 11.6.2
 description: The most powerful and extensible open source Wiki software.
 home: https://wiki.js.org
 icon: https://cdn.js.wiki/images/wikijs-butterfly.svg
