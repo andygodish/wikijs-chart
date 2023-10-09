@@ -57,6 +57,11 @@ $ helm repo add requarks https://charts.js.wiki
 
 ## Installing the Chart
 
+I removed the lBIP field from the default values and just include it in the installation helm command.
+```
+helm install wikijs requarks/wiki --set-string service.loadBalancerIP=192.168.1.90  -f values.yaml
+```
+
 To install the chart with the release name `my-release` run the following:
 
 ### Using Helm 3:
