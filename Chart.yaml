@@ -26,4 +26,4 @@ name: wiki
 sources:
 - https://github.com/Requarks/wiki
 type: application
-version: 2.5.300
+version: 2.2.20
